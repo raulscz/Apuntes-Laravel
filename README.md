@@ -1,15 +1,43 @@
-# Título del Proyecto
+# Apuntes-Laravel
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_Apuntes para crear un buen proyecto de laravel:_
 
-## Comenzando 🚀
+## Como hacer un CRUD? 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+Paso número 1:
 
-Mira **Deployment** (Despliegue) para conocer como desplegar el proyecto.
+_Creamos la **Base De Datos** de nuestro proyecto._
+
+Paso número 2:
+
+_En la terminal ejecutamos el siguiente comando:_
+
+```
+composer create-project laravel/laravel NOMBRE_PROYECTO
+```
+
+_Este comando crea toda la esttructua de nuestro  proyecto._
+
+Paso número 3:
+
+_Una vez estemos dentro de nuestro proyecto debemos de ejecutar otro comando que es el siguiente._
+
+```
+php artisan make:model NOMBRE_CONTROLADOR -mcr
+```
+
+_Una vez hayamos ejecutado estos dos comando podemos empezar a toquetear nuestro proyecto._
+
+Paso número 4:
+
+_Conectamos nuestra BD con nuestro proyecto. Para ello vamos al fichero .env y donde pone BD-DATABASE ponemos_
+
+```
+DB_DATABASE=NOMBRE_DE_NUESTRA_BD
+```
 
 
-### Pre-requisitos 📋
+### Sesiones 📋
 
 _Que cosas necesitas para instalar el software y como instalarlas_
 
@@ -17,7 +45,7 @@ _Que cosas necesitas para instalar el software y como instalarlas_
 Da un ejemplo
 ```
 
-### Instalación 🔧
+### Enviar correo 🔧
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
@@ -35,7 +63,7 @@ hasta finalizar
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
-## Ejecutando las pruebas ⚙️
+## Pagar con PayPal ⚙️
 
 _Explica como ejecutar las pruebas automatizadas para este sistema_
 
@@ -98,30 +126,3 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
 * Da las gracias públicamente 🤓.
 * etc.
-# Apuntes-Laravel
-_Apuntes para crear un buen proyecto de laravel:_
-### Como hacer un CRUD?
-```
-  Paso número 1: Creamos la base de datos
-```  
-```
-  Paso número 2: En la terminal ejecutamos el siguiente comando --> composer create-project laravel/laravel NOMBRE_PROYECTO. Este comando crea toda la esttructua de nuestro  proyecto.
-```
-```
-  Paso número 3: Una vez estemos dentro de nuestro proyecto debemos de ejecutar otro comando que es el siguiente --> php artisan make:model NOMBRE_CONTROLADOR -mcr. Una vez hayamos ejecutado estos dos comando podemos empezar a toquetear nuestro proyecto.
-```
-```
-  Paso número 4: Conectamos nuestra BD con nuestro proyecto. Para ello vamos al fichero .env y donde pone BD_DATABASE ponemos --> DB_DATABASE=NOMBRE_DE_NUESTRA_BD
-```
-### Sesiones en laravel:
-```
-Hola Me llamo Raúl
-```
-### Enviar Correo
-```
-Hola Me llamo Raúl
-```
-### Pagar con PayPal
-```
-Hola Me Llamo Raúl
-```
